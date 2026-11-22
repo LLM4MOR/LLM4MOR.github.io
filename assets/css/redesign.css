@@ -889,3 +889,40 @@ section { padding-block: 64px; }
   .case-problem { grid-template-columns: 1fr; }
   .case-notation > div { grid-template-columns: 1fr; }
 }
+
+
+/* Case studies: follow the problem / model / reformulation / evidence sequence. */
+.case-variables,
+.case-results { margin: 32px 0; padding-top: 26px; border-top: 1px solid var(--line); }
+.case-variables h3,
+.case-results > h3 { margin: 0; font-size: clamp(20px, 2.5vw, 26px); }
+.case-variables h4 { margin: 20px 0 8px; font-size: 18px; }
+.case-variables p,
+.case-model > p,
+.case-status { max-width: 85ch; }
+.case-goal { color: var(--accent); }
+.case-full-model { margin: 18px 0; font-size: 16px; }
+.case-full-model .katex-display { margin: 0; }
+.case-bottleneck { padding: 4px 0 4px 18px; border-inline-start: 3px solid var(--accent); }
+.case-bottleneck > h4 { margin: 0 0 12px; font-size: clamp(18px, 2vw, 20px); font-weight: 700; }
+.case-bottleneck p { margin: 8px 0; }
+.case-route-tour { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+.case-route-days text { fill: var(--accent); font-size: 13px; }
+.case-reason { max-width: 85ch; }
+details.case-proof { font-size: 16px; }
+details.case-proof summary { cursor: pointer; color: var(--accent); font-size: 16px; font-weight: 600; }
+details.case-proof[open] summary { margin-bottom: 12px; }
+details.case-proof p { font-size: 16px; }
+details.case-proof > div { max-width: 100%; overflow-x: auto; }
+.case-results > .case-size { margin: 18px 0 0; padding-top: 0; border-top: 0; }
+.case-results .case-size h4,
+.case-results .case-performance > h4 { margin: 0 0 12px; font-size: 18px; }
+.case-results .case-size .tablewrap { max-width: 880px; }
+.case-results .case-size table.data { width: 100%; }
+.case-results .case-performance { margin-top: 24px; padding-top: 20px; }
+.case-status { margin-bottom: 0; }
+.case-runtime h5 { margin: 0; font-size: 16px; }
+@media (max-width: 800px) {
+  .case-full-model { font-size: 14px; }
+  .case-variables .case-notation > div { grid-template-columns: 1fr; gap: 4px; }
+}
